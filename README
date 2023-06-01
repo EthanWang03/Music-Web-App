@@ -1,0 +1,63 @@
+
+Title: Music Player Web Application
+
+Description:
+This project is a web application that allows users to play audio tracks, view cover art, artist, and title information, manage playlists, navigate through songs, and control the playback. The application is built using HTML, JavaScript, and a Python web server.
+
+Run using command:
+python app.py
+
+and visit the page:
+http://localhost:5000/
+
+Features:
+
+Audio Playback: Users can play audio tracks using the built-in audio player. The player supports controls such as play, pause, and stop.
+
+Display of Cover Art, Title, and Artist: The application dynamically displays the cover art, title, and artist information of the currently playing song. This information is updated as the user navigates through the playlist.
+
+Playlist Management: Users can view the playlist, which contains a list of songs. The playlist is displayed on the screen and provides an overview of the available tracks.
+
+Song Navigation: Users can navigate through the playlist by skipping forward and backward. Clicking on the "skip forward" button advances to the next song, while the "skip backward" button goes back to the previous song. This allows users to easily switch between tracks.
+
+Shuffle Button: The application includes a shuffle button that randomizes the order of songs in the playlist. Clicking on the shuffle button rearranges the playlist and starts playing songs in a random order.
+
+Progress Bar: The progress bar indicates the progress of the currently playing song. It visually represents the elapsed time of the song, allowing users to track the progress. The progress bar updates dynamically as the song plays.
+
+Components:
+The project consists of the following main components:
+
+HTML files: These files define the structure and layout of the web pages. They contain the necessary elements to display cover art, song information, playlist, and controls.
+
+JavaScript: The JavaScript code handles the functionality of the music player. It controls audio playback, updates the display based on user interactions, manages the playlist, handles navigation, and updates the progress bar.
+
+Python Web Server: The Python web server is responsible for serving the HTML, JavaScript, and other static files required by the application. It handles requests from the client-side and responds with the appropriate files.
+
+Music Files: The music files (in this case, audio tracks) are stored in a specific directory on the server. The paths to these files are referenced in the playlist and used by the JavaScript code to play the songs.
+
+Cover Art Images: The cover art images are also stored in a specific directory on the server. The paths to these images are referenced in the playlist and used to display the corresponding cover art for each song.
+
+Usage:
+
+Clone the project repository to your local machine.
+
+Start the Python web server by running the appropriate command or script. Make sure the server is configured to serve the required files, including HTML, JavaScript, music files, and cover art images.
+
+Access the web application by opening a web browser and navigating to the appropriate URL where the server is running.
+
+The web application will display the music player interface with cover art, song information, playlist, controls, and progress bar.
+
+Use the provided controls to play, pause, stop, skip forward, skip backward, shuffle, and monitor the progress of the currently playing song.
+
+Interact with the playlist to select different songs or modify the order through shuffling.
+
+Customize the application by adding your own music files and cover art images to the appropriate directories, and update the playlist accordingly.
+
+Note: Ensure that the file paths in the JavaScript code and the playlist accurately reflect the file structure and naming conventions of your project.
+
+Dependencies:
+
+Python web server (e.g., Flask)
+HTML
+CSS
+JavaScript

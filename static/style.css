@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.music-player{
+    background: #121212;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    height: 635px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #212121;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+.song-img{
+    color: #b3b3b3;
+}
+.music-player h1{
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+.music-player p{
+    font-size: 15px;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #535353;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+.controls div:nth-child(2){
+    background: #FFFFFF;
+    color: #121212;
+}
+.linked-div {
+    position: fixed;
+    transform: translateX(100%);
+}
+.linked-div .box {
+    width: 400px;
+    height: 635px;
+    background: #212121;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 60px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.linked-div .box img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
