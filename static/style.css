@@ -100,6 +100,16 @@ nav .circle{
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
 }
+.linked-div .box .word {
+    font-size: 25px;
+    cursor: pointer;
+}
+.linked-div .box .word:hover {
+    opacity: 1;
+}
+.linked-div .box:hover .word:not(:hover) {
+    opacity: 0.5;
+}
 .linked-div .box img {
     display: inline-block;
     vertical-align: middle;

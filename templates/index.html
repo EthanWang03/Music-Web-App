@@ -33,6 +33,16 @@
             </div>
             <div class="linked-div">
                 <div id="queue" style="display:none;" class="box" >
+                    <p class="word" onclick="playSong(0)"><img src="static/images/cover.jpg" width="40" height="40" alt="Image">Anything</p>
+                    <p class="word" onclick="playSong(1)"><img src="static/images/cover.jpg" width="40" height="40" alt="Image">Broken Bones</p>
+                    <p class="word" onclick="playSong(2)"><img src="static/images/alternative.jpg" width="40" height="40" alt="Image">Give It Up</p>
+                    <p class="word" onclick="playSong(3)"><img src="static/images/cover.jpg" width="40" height="40" alt="Image">Monkey Machine</p>
+                    <p class="word" onclick="playSong(4)"><img src="static/images/CRX.jpg" width="40" height="40" alt="Image">On Edge</p>
+                    <p class="word" onclick="playSong(5)"><img src="static/images/alternative.jpg" width="40" height="40" alt="Image">One Track Mind</p>
+                    <p class="word" onclick="playSong(6)"><img src="static/images/cover.jpg" width="40" height="40" alt="Image">Slow Down</p>
+                    <p class="word" onclick="playSong(7)"><img src="static/images/PEEK.jpg" width="40" height="40" alt="Image">Unnatural</p>
+                    <p class="word" onclick="playSong(8)"><img src="static/images/PEEK.jpg" width="40" height="40" alt="Image">Walls</p>
+                    <p class="word" onclick="playSong(9)"><img src="static/images/Ways to Fake It.jpg" width="40" height="40" alt="Image">Ways to Fake It</p>
                 </div>
             </div>
         </div>
@@ -152,11 +162,12 @@
             function displayQueue(){
                 var html = "";
                 for(i = 0; i < playlist.length; i++){
-                    html += '<img src="' + playlist[i][2] + '" width="40" height="40" alt="Image" onclick="playSong('+i
-                    html += ')">'
-                    html += playlist[i][1] + "<br>"
+                    html += '<p class="word fancy" onclick="playSong(' + i + ')">'
+                    html += '<img src="' + playlist[i][2] + '" width="40" height="40" alt="Image">'
+                    html += playlist[i][1]
+                    html += '</p>'
                 }
-                queue.innerHTML = html;
+                queue.innerHTML = html
             }
 
             function shuffleArray(array){
