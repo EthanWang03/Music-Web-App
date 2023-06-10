@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "Music-App/app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "Music-App/app.py"
+        }
+    ]
+}
